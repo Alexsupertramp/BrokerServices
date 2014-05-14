@@ -1,0 +1,111 @@
+// This is a simple dropdown menu that will help you to save time.
+// READ THIS: The best practice if you want to customize the dropdown menu is to do it on your style.less 
+// Quick read: DO NOT EDIT here.
+
+// ===================================
+// Sintaxis to CUSTOMIZE Dropdown
+// ===================================
+
+// Just Copy this less sintaxis on your style.less archive and change everything you want.
+// you can delete these @colors and put your own.
+
+
+
+@teal-grey-light:		#A3A3A3;
+@teal-grey-lighter:		#E6E6E6;
+@teal-grey:				#707070;
+@teal-grey-dark:		#2E2E2E;
+@teal-yellow :     		#F7DA00;
+
+//nav{
+.main-menu{	
+	ul{  padding: 0px; // Customize This!
+	font-size: 16px;
+
+
+		li{  padding: 25px; // Customize This!
+
+			a{  color: @teal-grey-light;
+				 // Customize This!
+				&:hover{ color: @teal-grey-lighter; // Customize This! 
+				}
+			}
+			&:hover { 
+				background-color: @teal-grey;
+				>a{ color: @teal-grey-lighter; } // Customize This!
+			}
+		}
+		ul{ background-color: @teal-grey-dark;
+		z-index: 50; // Customize This!
+			li{
+				&:hover{ 
+					background-color: @teal-yellow ; // Customize This!
+					a{ color: @teal-grey-dark; } // Customize This!
+				}
+				>a{ color: @teal-grey-light; text-align: left; // Customize This! }
+			}//end li
+
+				>li { &:hover{  background-color: @teal-grey;  // Customize This!
+						a{ color: @teal-grey-light; } // Customize This!
+					}
+					a{ }
+				}//end li
+			}//end ul
+		}//end ul
+	}//end ul
+//}//end nav
+}
+
+// This is will make your dropdown work, don't change it unless you know what you are doing.
+//nav{
+.broker-m-style{
+	ul{
+		margin: 0px;
+		vertical-align: top;
+		display: inline-block;
+
+		li{
+			margin: 0px;
+			float: left;
+			list-style-type: none; 
+
+			a{ 
+				display: inline-block; 
+				
+				&:hover{
+					text-decoration: none;
+				}
+			}
+			&:hover {  position: relative; 
+				>ul{ display: block; padding: 0px; }
+			}
+		}
+		ul{
+			top: 100%;
+			left: 0%;
+			min-width: 100%;
+			display: none;
+			position: absolute;
+
+			li{
+				padding: 0px;
+				width: 100%;
+				border:none;
+				text-align: center; 
+				line-height: 1em;
+				float: none;
+
+				>a{
+					display: block;
+					padding: 10px; 
+				}
+			}//end li
+
+			ul{
+				top: 0;
+				left: 100%;
+			}//end ul
+		}//end ul
+	}//end ul
+//}//end nav
+}

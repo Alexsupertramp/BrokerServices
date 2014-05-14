@@ -1,0 +1,265 @@
+//	Import all your stuff here
+// ------------------------------------
+@import '../lib/bootstrap-3.1.1/less/bootstrap.less';// Bootstrap Docs: http://getbootstrap.com/
+// .container{ width: 970px !important; } // Bootstrap Disabling responsiveness Docs: http://getbootstrap.com/getting-started/#disable-responsive
+
+@import "wordpress.css";
+@import "../lib/font-awesome-4.0.3/css/font-awesome.min.css"; // Font-Awesome Docs: http://fontawesome.io/icons/
+
+@import "dropdown_menu.less"; // Use this Dropdown Menu to save time
+
+//	Fix any path's of your libs Here
+// ------------------------------------
+@fa-font-path:        "../lib/font-awesome-4.0.3/fonts/"; // Font-Awesome Icon Path Fix
+@icon-font-path:          "../lib/bootstrap-3.1.1/fonts/"; // Bootstrap Icon Path Fix
+
+//	My Fonts Here
+//------------------------------------
+//Learn how to use @font-face - Docs: http://nicewebtype.com/notes/2009/10/30/how-to-use-css-font-face/
+
+@font-face{
+	font-family: 'OpenSans' ; // 'family name' 
+	font-style:normal ; // normal, italic, oblique 
+	font-weight:400 ; // 100 (This is light), 400 (This is normal), 900 (This is bold). 
+	src: url("/fonts/OpenSans-Regular.ttf");
+}
+
+@primaryFontFamily: @CustomFontFamilyFontFamily;
+@secondaryFontFamily: Georgia, "Your-Serif FontFamily", Times, serif;
+
+@CustomFontFamilyFontFamily: @SecondCustomFontFamily;
+@SecondCustomFontFamily: Georgia, "Your-Serif FontFamily", Times, serif;
+
+//
+//Variables
+// ------------------------------------
+@teal-yellow:      #F7DA00;
+@teal-yellow-dark: #d3a60e;
+@teal-grey-light:  #A3A3A3;
+@teal-grey-lighter:#E6E6E6;
+@teal-grey: 	   #707070;
+@teal-grey-darker: #2E2E2E;
+
+
+// ==================================
+// General Selectors // Design Rules
+// ==================================
+body{
+	
+}
+
+h1, h2, h3, h4, h5, h6{color: @teal-yellow-dark;}
+h2{
+	padding: 25px 0;
+	color: @teal-yellow-dark;
+	
+	
+}
+h3{
+	color: @teal-yellow-dark;
+}
+h4{
+	margin-top: 50px;
+	color: @teal-yellow-dark;
+	text-align: center;
+}
+img{ vertical-align: top; }//width:100%;} // Remove 2 pixels under the image
+
+ol, ul, dl{}
+
+li{}
+
+a{&:hover {text-decoration: none;}} 
+
+p{}
+// General Clases
+// ====================================
+
+.none{ display: none; }
+
+
+// ==================================
+// Header Main Header Css goes here.
+// ==================================
+.broker-header{
+	.yellow-color{
+		background-color: @teal-yellow;
+		height: 6px;
+	}
+	.grey-color{
+		background-color: @teal-grey;
+		height: 6px;
+	}
+	background-color: @teal-grey-darker;
+
+	.logo-img{
+		background-image: url('../img/assets/logotipo/logo-header.png');
+		background-repeat: no-repeat;
+		padding: 25px;
+		margin: 15px 0 0 0;
+		width: 100%;
+	}
+	.main-menu{
+		text-transform: uppercase;
+	}
+}
+
+
+// ==================================
+// Index
+// ==================================
+
+.broker-content{
+	text-align: center;
+	h2{
+		position: relative;
+		display: inline-block;
+	&:before{
+		content: @teal-yellow-dark;
+		height: 5px;
+		position: absolute;
+		top: 0px;
+		left: -150px;
+	}
+	&:after{
+		background-color: @teal-yellow-dark;
+		height: 5px;
+		position: absolute;
+		top:0px;
+		right: -150px;
+	}
+	}
+	#main-carousel{
+		img{
+			width: 100%;
+		}
+		.carousel-control-left{
+			margin-top: 300px;
+		}
+		.carousel-control-right{
+			margin-top: 300px;
+		}		
+		[class^="carousel-slide-"],
+		[class*="carousel-slide-"]{
+			background-size: cover;
+			background-position: center;
+			height: 530px;
+		}
+	}
+	
+	.broker-services{
+		background-image: url('../img/index/pattern.png');
+		.info-block{
+		padding:10px;
+		padding-bottom: 20px;
+		h3{
+			margin:10px 0;
+		}
+			p{
+				text-align: justify;
+			}
+				background-color: @teal-grey-lighter;
+				border:1px @teal-grey-light;
+				border-style: solid;
+				margin-bottom: 25px;
+			.info-img{
+				border-top: 1px @teal-grey-light;
+				border-right: 0px;
+				border-bottom: 0px;
+				border-left: 0px;
+				border-style: solid;
+				padding: 10px 0;
+				img{
+					width: 310px;
+					height: 250px;
+				}
+			}
+			.btn-vm{	
+				a{
+					background-color: @teal-yellow-dark;
+					color:white;
+					padding: 8px 15px;
+					&:hover{
+						color:white;
+						background-color: @teal-yellow;
+					}
+				}
+			}	
+
+		}
+	}
+}
+.broker-div{
+	background-color: white;
+	text-align: center;
+	padding-bottom:25px;
+	p{
+		text-align: center;
+	}
+}
+.broker-part{
+	background-color: @teal-grey-lighter;
+	padding-bottom: 25px;
+}
+
+
+// ==================================
+// Footer // Main Footer Css goes here.
+// ==================================
+
+
+.broker-footer{
+	background-color: @teal-grey-darker;
+	.broker-mapa{
+		ul{
+			padding:0;
+			li{
+				list-style: none;
+				a{
+					color:white;
+					text-decoration: none;
+				}
+			}
+		}	
+	}
+	//background-color: @teal-grey-darker;
+	.redes{
+		a{
+			padding:0px;
+			float: left;
+		}
+	}
+	a{
+		padding-left: 125px;
+		display: list-item;
+		list-style: none;
+		text-align: left;
+		color: white;
+	}
+	p{
+		i{
+			color:@teal-yellow;
+			padding-left: 15px;
+		}	
+		padding-left: 125px;
+		color:white;
+		text-align: left;
+		
+	}
+	
+}//.broker-footer
+
+.credits{
+	font-size: 10px;
+	width: 100%;
+	background-color: black;
+	color:white;
+
+	a{
+		padding: 0;
+	}
+	p{
+		margin: 0 10px;
+		display: inline-table;;
+	}
+}
