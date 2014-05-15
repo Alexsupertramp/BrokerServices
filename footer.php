@@ -56,6 +56,6 @@
 	
 </div><!--broker-footer end-->
 
-
+	<?php wp_footer(); ?>
 	</body>
 </html>

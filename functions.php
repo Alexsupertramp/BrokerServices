@@ -1,12 +1,5 @@
 <?php
-register_nav_menus(array('principal'=>'Main Menu', 'footer'=>'Footer Menu'));
-//funcion para agregar imagenes de thumbnails
-add_theme_support('post-thumbnails');
-//funcion para excerpt en pages
-add_action('init', 'excerpt_page');
-function excerpt_page(){
-	add_post_type_support('page','excerpt');
-}
+
 /* Edited by NuevaWeb to make it simple */
 /*
 Author: Eddie Machado
