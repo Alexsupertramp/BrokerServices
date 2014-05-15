@@ -21,7 +21,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-4">
-						<a href="" class="logo-img"></a><!--logo-img end-->
+						
+						<a href="<?php echo home_url(); ?>">
+							<div class="logo-img">
+							</div>
+						</a><!--logo-img end-->
 					</div><!--col-xs-4 end-->
 					<div class="col-xs-8">
 						<div class="main-menu broker-m-style">
