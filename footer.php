@@ -17,9 +17,6 @@
                   <?php $direccion=get_post_meta($post->ID, '[Contacto] Dirección', true); ?>
                   <?php $telefonos=get_post_meta($post->ID, '[Contacto] Teléfonos', true); ?>
                   <?php $email=get_post_meta($post->ID, '[Contacto] Email', true); ?>
-                  <?php $face=get_post_meta($post->ID, '[Contacto] Facebook', true); ?>
-                  <?php $twit=get_post_meta($post->ID, '[Contacto] Twitter', true); ?>
-
 
 			<div class="col-xs-4">
 				<h4><?php the_title(); ?></h4>
@@ -32,10 +29,11 @@
 
 			<div class="col-xs-4">
 				<h4>Síguenos en: </h4>
-				<div class="redes">
-					<p><i class="fa fa-facebook"></i><a href="<?php the_permalink(); ?>"><?php echo $face ?></a></p>
-					<p><i class="fa fa-twitter"></i><a href="<?php the_permalink(); ?>"><?php echo $twit ?></a></p>
-				</div>
+				<?php if(is_active_sidebar('sidebar1')): ?>				
+					<ul class="redes">
+						<?php dynamic_sidebar( 'sidebar1' ); ?>
+					</ul>
+				<?php  endif; ?>
 			</div><!--col-xs-4 end-->
 
 			<?php endwhile; ?>
@@ -44,12 +42,22 @@
 
 		</div><!--row end-->
 	</div><!--container end-->
-
 	<div class="credits">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-4"><p>Sitio creado por&nbsp;&nbsp;<a href="#">NuevaWeb</a></p></div>
-				<div class="col-xs-8"><a href="">Aviso de privacidad</a> <p> &copy; 2014 Todos los derechos reservados</p></div>
+				<div class="col-xs-2">
+					<a href="#">Aviso de privacidad</a> 
+				</div>
+				<div class="col-xs-2">
+					<p> &copy; 2014 Todos los derechos reservados</p>
+				</div>
+				<div class="col-xs-4">
+					<div class="custom-a">						
+						<a href="">FORMATOS</a>								
+					</div>
+				</div>
+
 			</div><!--row end-->
 		</div><!--container end-->
 	</div><!--credits end-->

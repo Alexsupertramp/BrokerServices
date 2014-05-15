@@ -171,7 +171,7 @@ function bones_theme_support() {
 	add_theme_support( 'post-thumbnails' );
 
 	// default thumb size
-	set_post_thumbnail_size(125, 125, true);
+	set_post_thumbnail_size(360, 270, true); // default is 175 x 175
 
 	// wp custom background (thx to @bransonwerner for update)
 	add_theme_support( 'custom-background',
@@ -210,8 +210,18 @@ function bones_theme_support() {
 	// registering wp3+ menus
 	register_nav_menus(
 		array(
-			'main-nav' => __( 'The Main Menu', 'bonestheme' ),   // main nav in header
-			'footer-links' => __( 'Footer Links', 'bonestheme' ) // secondary nav in footer
+			// 'utilities-nav' => '[Header] Utilities Menu',
+			'main-nav' => '[Header] Main Menu',
+			// 'secondary-nav' => '[Header] Secondary Menu',
+
+			// 'footer-main-nav' => '[Footer] Main Menu',
+
+			// 'footer-first-col-nav' => '[Footer] First Menu',
+			// 'footer-second-col-nav' => '[Footer] Second Menu',
+			// 'footer-third-col-nav' => '[Footer] Third Menu',
+			// 'footer-fourth-col-nav' => '[Footer] Fourth Menu',
+
+			'footer-legal-nav' => '[Footer] Legal Menu'
 		)
 	);
 } /* end bones theme support */

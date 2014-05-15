@@ -6,7 +6,11 @@
 	<div class="broker-services">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12"><h2>Servicios</h2></div><!--col-xs-12 end-->
+				<div class="col-xs-12">
+					<div class="linea">
+						<h2>Servicios</h2>
+					</div>	
+				</div><!--col-xs-12 end-->
 			</div><!--row end-->
 			<div class="row">
 
@@ -90,7 +94,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h2>Cotización de Divisas</h2>
+					<div class="linea">
+						<h3>Cotización de Divisas</h3>
+					</div>
 					<div><img src="<?php bloginfo( 'template_url' ); ?>/img/index/divisas.png" ></div><br>
 					<p>Cambios de Divisas entregados por <a href="#">Investing.com Mexico</a></p>
 				</div><!--col-xs-12 end-->
@@ -102,7 +108,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<h2>Nuestros Partners Financieros</h2>							
+					<h3>Nuestros Partners Financieros</h3>							
 				</div><!--col-xs-12 end-->
 			</div><!--row end-->
 			<div class="row">

@@ -4,23 +4,19 @@
 
 <div id="main-carousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
+  <ol class="carousel-indicators">
 
-  <?php if( sizeof($carousel_query->posts)!=1 ): ?>
+  	<?php $i=0; ?>
 
-    <ol class="carousel-indicators">
+	<?php while( $carousel_query->have_posts() ) : $carousel_query->the_post(); ?>
+		<?php if( $i==0 ): ?>			
+		    <li data-target="#main-carousel" data-slide-to="<?php echo $i; ?>" class="active"></li>
+		<?php else: ?>
+		    <li data-target="#main-carousel" data-slide-to="<?php echo $i; ?>"></li>
+		<?php endif; ?>
+	<?php $i++; endwhile; ?>
 
-    	<?php $i=0; ?>
-  	<?php while( $carousel_query->have_posts() ) : $carousel_query->the_post(); ?>
-  		<?php if( $i==0 ): ?>			
-  		    <li data-target="#main-carousel" data-slide-to="<?php echo $i; ?>" class="active"></li>
-  		<?php else: ?>
-  		    <li data-target="#main-carousel" data-slide-to="<?php echo $i; ?>"></li>
-  		<?php endif; ?>
-  	<?php $i++; endwhile; ?>
-
-    </ol>
-
-  <?php endif; ?>
+  </ol>
 
   <div class="carousel-inner">
   	<?php $i=0; ?>
@@ -39,6 +35,14 @@
     		<div class="carousel-slide-<?php echo $i; ?>"></div>
 	    <?php endif; ?>
 
+	    <?php if( get_the_content() ): ?>
+		<div class="carousel-caption">
+	    	<?php the_content(); ?>
+
+	    	<a class="primary-btn" href="<?php the_permalink(); ?>">Ver Más »</a>
+		</div><!-- end .carousel-caption -->
+		<?php endif; ?>
+
     </div><!-- end .item -->
 		<?php else: ?>
 	<div class="item">
@@ -51,22 +55,26 @@
     		<div class="carousel-slide-<?php echo $i; ?>"></div>
 	    <?php endif; ?>
 
-    </div><!-- end .item -->
+	    <?php if( get_the_content() ): ?>
+		<div class="carousel-caption">
+	    	<?php the_content(); ?>
+
+	    	<a class="primary-btn" href="<?php the_permalink(); ?>">Ver Más »</a>
+		</div><!-- end .carousel-caption -->
 		<?php endif; ?>
 
-    <?php wp_reset_postdata(); ?>
+    </div><!-- end .item -->
+		<?php endif; ?>
 	<?php $i++; endwhile; ?>
   </div><!-- end .carousel-inner -->
 
-  <?php if( sizeof($carousel_query->posts)!=1 ): ?>
-    <!-- Controls -->
-    <a class="left carousel-control" href="#main-carousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#main-carousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-  <?php endif; ?>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#main-carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#main-carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
 
 </div><!-- end #main-carousel -->
 

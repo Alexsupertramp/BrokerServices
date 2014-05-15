@@ -6,8 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Broker Services</title>
 
-		<script scr="<?php bloginfo( 'template_url' ); ?>/lib/bootstrap-3.1.1/js/jquery-1-11.0.min.js"></script>
-		<script scr="<?php bloginfo( 'template_url' ); ?>/lib/bootstrap-3.1.1/js/bootstrap.min.js"></script>
+		<script scr="<?php bloginfo( 'template_url' ); ?>/lib/bootstrap-3.0.3/js/jquery-1-11.0.min.js"></script>
+		<script scr="<?php bloginfo( 'template_url' ); ?>/lib/bootstrap-3.0.3/js/bootstrap.min.js"></script>
 
 		<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/style.css">
 <?php wp_head(); ?>
@@ -21,7 +21,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-4">
-						<div class="logo-img"></div><!--logo-img end-->
+						<a href="" class="logo-img"></a><!--logo-img end-->
 					</div><!--col-xs-4 end-->
 					<div class="col-xs-8">
 						<div class="main-menu broker-m-style">
