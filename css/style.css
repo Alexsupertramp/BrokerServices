@@ -5960,11 +5960,9 @@ td.visible-print {
   padding: 0px;
   font-size: 16px;
 }
-.main-menu ul li {
-  padding: 25px;
-}
 .main-menu ul li a {
   color: #a3a3a3;
+  padding: 25px;
 }
 .main-menu ul li a:hover {
   color: #e6e6e6;
@@ -6036,6 +6034,7 @@ td.visible-print {
 .broker-m-style ul ul li > a {
   display: block;
   padding: 10px;
+  text-transform: capitalize;
 }
 .broker-m-style ul ul ul {
   top: 0;
@@ -6045,7 +6044,10 @@ td.visible-print {
   font-family: 'OpenSans';
   font-style: normal ;
   font-weight: 400 ;
-  src: url("/fonts/OpenSans-Regular.ttf");
+  src: url("fonts/OpenSans-Regular.ttf");
+}
+body {
+  background-color: black;
 }
 h1,
 h2,
@@ -6054,24 +6056,46 @@ h4,
 h5,
 h6 {
   color: #d3a60e;
-}
-h2 {
-  padding: 25px 0;
-  color: #d3a60e;
-}
-h3 {
-  color: #d3a60e;
-}
-h4 {
-  margin-top: 50px;
-  color: #d3a60e;
-  text-align: center;
+  font-family: 'OpenSans', arial, sans-serif;
 }
 img {
   vertical-align: top;
 }
+a {
+  color: #f7da00;
+}
 a:hover {
   text-decoration: none;
+  color: #d3a60e;
+}
+a:visited {
+  color: #707070;
+}
+blockquote {
+  padding: 10px 20px;
+  width: 80%;
+  position: relative;
+  left: 0;
+  border-left: none;
+  border-top: 5px solid #f7da00;
+  border-right: 5px solid #f7da00;
+  right: 0;
+  margin: auto;
+}
+blockquote:before {
+  content: '';
+  border-left: 5px solid #f7da00;
+  height: 50px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin: auto;
+}
+blockquote p {
+  text-align: justify;
+}
+.page-rules {
+  background-color: white;
 }
 .none {
   display: none;
@@ -6097,10 +6121,57 @@ a:hover {
 .broker-header .main-menu {
   text-transform: uppercase;
 }
+.texto-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 400px;
+  height: 500px;
+  z-index: 10;
+  color: white;
+}
+.texto-carousel h1 {
+  color: white;
+}
+.texto-carousel ul {
+  margin-top: 20px;
+  display: inline-flex;
+  padding: 0;
+}
+.texto-carousel ul li {
+  list-style: none;
+  color: white;
+  padding: 0px 10px;
+}
+.texto-carousel .lineab {
+  background-color: white;
+  height: 1px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+.texto-carousel .lineab2 {
+  background-color: white;
+  height: 1px;
+  width: 99%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.texto-carousel .ubicacion {
+  border: 1px white solid;
+  display: inline-block;
+  padding: 10px;
+}
 .broker-content {
   text-align: center;
 }
 .broker-content h2 {
+  padding: 25px 0;
+  color: #d3a60e;
   background-image: url('../img/index/pattern.png');
   position: absolute;
   margin: auto;
@@ -6142,6 +6213,7 @@ a:hover {
   height: 530px;
 }
 .broker-content .broker-services {
+  background-color: white;
   background-image: url('../img/index/pattern.png');
 }
 .broker-content .broker-services .linea {
@@ -6217,6 +6289,10 @@ a:hover {
   background-color: #2e2e2e;
   text-align: center;
 }
+.broker-footer h4 {
+  text-align: left;
+  margin-left: 15px;
+}
 .broker-footer .broker-mapa ul {
   padding: 0;
 }
@@ -6227,26 +6303,30 @@ a:hover {
   color: white;
   text-decoration: none;
 }
+.broker-footer .redes ul {
+  padding: 0;
+}
 .broker-footer .redes .widget-custom-link-icon {
-  width: 20px;
-  margin: 0px;
+  display: inline-block;
+}
+.broker-footer .redes .widget-custom-link-text {
+  display: inline-block;
 }
 .broker-footer .redes i {
   color: #f7da00;
   margin-right: 10px;
 }
 .broker-footer .redes a {
-  padding: 0px;
+  margin: 0;
 }
 .broker-footer a {
-  padding-left: 125px;
   display: list-item;
   list-style: none;
   color: white;
   text-align: left;
+  margin-left: 15px;
 }
 .broker-footer p {
-  padding-left: 125px;
   color: white;
   text-align: left;
 }
@@ -6261,6 +6341,11 @@ a:hover {
   color: white;
   padding: 10px 0 ;
   vertical-align: middle;
+}
+.credits h4 {
+  margin-top: 50px;
+  color: #d3a60e;
+  text-align: center;
 }
 .credits a {
   padding: 0;

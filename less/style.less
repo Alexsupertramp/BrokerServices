@@ -21,14 +21,12 @@
 	font-family: 'OpenSans' ; // 'family name' 
 	font-style:normal ; // normal, italic, oblique 
 	font-weight:400 ; // 100 (This is light), 400 (This is normal), 900 (This is bold). 
-	src: url("/fonts/OpenSans-Regular.ttf");
+	src: url("fonts/OpenSans-Regular.ttf");
 }
 
-@primaryFontFamily: @CustomFontFamilyFontFamily;
-@secondaryFontFamily: Georgia, "Your-Serif FontFamily", Times, serif;
+@primaryFontFamily: 'OpenSans', arial, sans-serif;
+// @secondaryFontFamily: Georgia, "Your-Serif FontFamily", Times, serif;
 
-@CustomFontFamilyFontFamily: @SecondCustomFontFamily;
-@SecondCustomFontFamily: Georgia, "Your-Serif FontFamily", Times, serif;
 
 //
 //Variables
@@ -45,23 +43,23 @@
 // General Selectors // Design Rules
 // ==================================
 body{
-	
+	background-color: black;
 }
 
-h1, h2, h3, h4, h5, h6{color: @teal-yellow-dark;}
-h2{
-	padding: 25px 0;
+h1, h2, h3, h4, h5, h6{
 	color: @teal-yellow-dark;
+	font-family: @primaryFontFamily;
+}
+h2{
+	
 	
 	
 }
 h3{
-	color: @teal-yellow-dark;
+	
 }
 h4{
-	margin-top: 50px;
-	color: @teal-yellow-dark;
-	text-align: center;
+
 }
 img{ vertical-align: top; }//width:100%;} // Remove 2 pixels under the image
 
@@ -69,9 +67,47 @@ ol, ul, dl{}
 
 li{}
 
-a{&:hover {text-decoration: none;}} 
+a{
+	color: @teal-yellow;
+	&:hover {
+		text-decoration: none;
+		color:@teal-yellow-dark;
+		}
+	&:visited{
+		color: @teal-grey;
+	}
+} 
 
 p{}
+
+blockquote {
+	padding: 10px 20px;
+	width: 80%;
+	position: relative;
+	left: 0;
+	border-left: none;
+	border-top: 5px solid @teal-yellow;
+	border-right: 5px solid @teal-yellow;
+	right: 0;
+	margin: auto;
+
+	&:before{
+		content: '';
+		border-left:5px solid @teal-yellow;
+		height: 50px;
+		top: 0;
+		left: 0;
+		position: absolute;
+		margin: auto;
+	}
+	p{
+		text-align: justify;
+	}
+}
+
+.page-rules{
+	background-color: white;
+}
 // General Clases
 // ====================================
 
@@ -108,10 +144,61 @@ p{}
 // ==================================
 // Index
 // ==================================
+.texto-carousel{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 400px;
+	height: 500px;
+	z-index: 10;
+	color: white;
+			
+	h1{
+		color: white;
+		
+	}
+	ul{
+		margin-top: 20px;
+		display: inline-flex;
+		padding:0;
+		li{
+			list-style: none;
+			color: white;
+			padding: 0px 10px;
+
+		}
+	}
+	.lineab{
+			background-color: white;
+			height: 1px;
+			margin-top: 10px;
+			margin-bottom: 2px; 
+	}
+	.lineab2{
+			background-color: white;
+			height: 1px;
+			width: 99%;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+	.ubicacion{
+		border: 1px white solid; 
+		display: inline-block;
+		padding: 10px;
+	}
+}
+
 
 .broker-content{
 	text-align: center;
 	h2{
+		padding: 25px 0;
+		color: @teal-yellow-dark;
 		background-image: url('../img/index/pattern.png');
 		position: absolute;
 		margin: auto;
@@ -156,6 +243,7 @@ p{}
 	}
 	
 	.broker-services{
+		background-color: white;
 		background-image: url('../img/index/pattern.png');
 		.linea{
 			background-color: @teal-yellow-dark;
@@ -239,6 +327,10 @@ p{}
 
 
 .broker-footer{
+	h4{
+		text-align: left;	
+		margin-left: 15px;
+	}
 	background-color: @teal-grey-darker;
 	text-align: center;
 	.broker-mapa{
@@ -253,47 +345,64 @@ p{}
 			}
 		}	
 	}
+
 	//background-color: @teal-grey-darker;
 	.redes{
+		ul{
+			padding: 0;
+		}
 		.widget-custom-link-icon{
-			width: 20px;
-			margin: 0px;
+			
+				display: inline-block;	
+			
+		}
+		.widget-custom-link-text{
+			
+				display: inline-block;
+			
 		}
 		i{
 			color:@teal-yellow;
 			margin-right: 10px;
+
 		}	
 		a{
-			padding: 0px;
+			margin: 0;
 		}
+		
 	}
 	a{
-		padding-left: 125px;
 		display: list-item;
 		list-style: none;
 		color: white;
 		text-align: left;
+		margin-left: 15px;
 	}
 	p{
 		i{
 			color:@teal-yellow;
 			margin-right: 10px;
 		}	
-		padding-left: 125px;
 		color:white;
-		text-align: left;
+		text-align:left;
 		
 	}
 	
 }//.broker-footer
 
 .credits{
+	h4{
+		margin-top: 50px;
+		color: @teal-yellow-dark;
+		text-align: center;
+	}
 	font-size: 11px;
 	width: 100%;
 	background-color: black;
 	color:white;
 	padding: 10px 0 ;
 	vertical-align: middle;
+
 
 	a{
 		padding: 0;

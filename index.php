@@ -1,7 +1,27 @@
 <?php get_header(); ?>
 
 <div class="broker-content">
-	<?php include 'carousel.php' ?>
+
+	<div class="texto-carousel">
+        <div class="row">
+          <div class="col-x-12">
+            <h1>Financial Broker Services</h1>
+            <div class="lineab"></div>           	
+            <div class="lineab2"></div>
+            	<ul>
+            		<li>Créditos</li><p>♦</p>
+            		<li>Arrendamiento</li><p>♦</p>
+            		<li>Factoraje</li><p>♦</p>
+            		<li>Seguros</li>
+            	</ul> 
+            	<div class="ubicacion">
+            		DF y área Metropolitana
+            	</div>          
+          </div>
+        </div>
+    </div>
+
+	<?php include('carousel.php'); ?>
 
 	<div class="broker-services">
 		<div class="container">
@@ -19,18 +39,20 @@
 					<?php while($the_query->have_posts()):$the_query->the_post(); ?>
 
 				<div class="col-xs-4">
-					<div class="info-block">
-						<h3><?php the_title(); ?></h3>
+					<article class="info-block">
+						<header>
+							<h3><?php the_title(); ?></h3>
+						</header>
 						<div class="info-img">
 							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail(); ?>
 							</a>
 						</div><!--info-img end-->
 						<p><?php the_excerpt(); ?></p>
-						<div class="btn-vm">
-						<a href="<?php the_permalink(); ?>">VER MÁS</a>
-						</div>
-					</div><!--info-block end-->
+						<footer class="btn-vm">
+							<a href="<?php the_permalink(); ?>">VER MÁS</a>
+						</footer>
+					</article><!--info-block end-->
 				</div><!--col-xs-4 end-->
 
 					<?php endwhile; ?>
@@ -43,18 +65,20 @@
 					<?php while($the_query2->have_posts()):$the_query2->the_post(); ?>
 
 				<div class="col-xs-4">
-					<div class="info-block">
-						<h3><?php the_title(); ?></h3>
+					<article class="info-block">
+						<header>
+							<h3><?php the_title(); ?></h3>
+						</header>
 						<div class="info-img">
 							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail(); ?>
 							</a>
 						</div>
 						<p><?php the_excerpt(); ?></p>
-						<div class="btn-vm">
-						<a href="<?phpthe_permalink(); ?>">VER MÁS</a>
-						</div>
-					</div><!--info-block end-->
+						<footer class="btn-vm">
+							<a href="<?phpthe_permalink(); ?>">VER MÁS</a>
+						</footer>
+					</article><!--info-block end-->
 				</div><!--col-xs-4 end-->
 
 					<?php endwhile; ?>
@@ -68,16 +92,18 @@
 
 				<div class="col-xs-4">
 					<div class="info-block">
-						<h3><?php the_title(); ?></h3>
+						<header>
+							<h3><?php the_title(); ?></h3>
+						</header>
 						<div class="info-img">
 							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail(); ?>
 							</a>
 						</div>
 						<p><?php the_excerpt(); ?></p>
-						<div class="btn-vm">
-						<a href="<?php the_permalink(); ?>">VER MÁS</a>
-						</div>
+						<footer class="btn-vm">
+							<a href="<?php the_permalink(); ?>">VER MÁS</a>
+						</footer>
 					</div><!--info-block end-->
 				</div><!--col-xs-4 end-->
 

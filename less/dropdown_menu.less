@@ -22,10 +22,11 @@
 	ul{  padding: 0px; // Customize This!
 	font-size: 16px;
 
+		li{   // Customize This!
 
-		li{  padding: 25px; // Customize This!
 
 			a{  color: @teal-grey-light;
+				padding: 25px;
 				 // Customize This!
 				&:hover{ color: @teal-grey-lighter; // Customize This! 
 				}
@@ -40,7 +41,7 @@
 			li{
 				&:hover{ 
 					background-color: @teal-yellow ; // Customize This!
-					a{ color: @teal-grey-dark; } // Customize This!
+					a{ color: @teal-grey-dark;} // Customize This!
 				}
 				>a{ color: @teal-grey-light; text-align: left; // Customize This! }
 			}//end li
@@ -96,8 +97,10 @@
 				float: none;
 
 				>a{
+
 					display: block;
 					padding: 10px; 
+					text-transform: capitalize;
 				}
 			}//end li
 

@@ -31,7 +31,7 @@ require_once( 'lib/ftscratch-support/theme_support.php' );
 // Thumbnail sizes
 // add_image_size( 'slide-1500-500', 1500, 500, true );
 // add_image_size( 'slide-1920-460', 1920, 460, true );
-
+add_image_size('slide-1920-460', 1920, 460, true);
 add_image_size( 'bg-thumbnail', 640, 480, true );
 add_image_size( 'md-thumbnail', 360, 270, true );
 add_image_size( 'sm-thumbnail', 203, 152, true );
