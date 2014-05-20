@@ -6096,6 +6096,7 @@ blockquote p {
 }
 .page-rules {
   background-color: white;
+  padding: 30px 0 70px 0;
 }
 .none {
   display: none;
@@ -6223,7 +6224,7 @@ blockquote p {
 }
 .broker-content .broker-services .info-block {
   padding: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
   background-color: #e6e6e6;
   border: 1px #a3a3a3;
   border-style: solid;
@@ -6250,6 +6251,12 @@ blockquote p {
 .broker-content .broker-services .info-block .btn-vm a {
   background-color: #d3a60e;
   color: white;
+  position: relative;
+  top: 30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
   padding: 8px 15px;
 }
 .broker-content .broker-services .info-block .btn-vm a:hover {

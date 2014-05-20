@@ -121,7 +121,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="linea">
-						<h3>Cotización de Divisas</h3>
+						<h3>Índices Bursátiles</h3>
 					</div>
 					<iframe frameborder="0" scrolling="no" height="192" width="484" allowtransparency="true" marginwidth="0" marginheight="0" src="http://indrates.mx.forexprostools.com/index.php?pairs_ids=169;166;20;170;24441;17920;172;&header-text-color=%23FFFFFF&curr-name-color=%230059b0&inner-text-color=%23000000&green-text-color=%232A8215&green-background=%23B7F4C2&green-background=%23B7F4C2&red-text-color=%23DC0001&red-background=%23FFE2E2&inner-border-color=%23CBCBCB&border-color=%23cbcbcb&bg1=%23F6F6F6&bg2=%23ffffff&open=show&last_update=hide"></iframe>
 					<br />
