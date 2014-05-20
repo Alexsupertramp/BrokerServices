@@ -1,26 +1,7 @@
 <?php get_header(); ?>
 
 <div class="broker-content">
-
-	<div class="texto-carousel">
-        <div class="row">
-          <div class="col-x-12">
-            <h1>Financial Broker Services</h1>
-            <div class="lineab"></div>           	
-            <div class="lineab2"></div>
-            	<ul>
-            		<li>Créditos</li><p>♦</p>
-            		<li>Arrendamiento</li><p>♦</p>
-            		<li>Factoraje</li><p>♦</p>
-            		<li>Seguros</li>
-            	</ul> 
-            	<div class="ubicacion">
-            		DF y área Metropolitana
-            	</div>          
-          </div><!--col-xs-12 end-->
-        </div><!--row end-->
-    </div><!--texto-carousel end-->
-
+	
 	<?php include('carousel.php'); ?>
 
 	<section class="broker-services">
@@ -48,7 +29,10 @@
 								<?php the_post_thumbnail(); ?>
 							</a>
 						</div><!--info-img end-->
-						<?php the_excerpt(); ?>
+						<?php
+						  $excerpt = get_the_excerpt();
+						  echo string_limit_words($excerpt,35);
+						?>
 						<footer class="btn-vm">
 							<a href="<?php the_permalink(); ?>">VER MÁS</a>
 						</footer>
@@ -74,8 +58,11 @@
 								<?php the_post_thumbnail(); ?>
 							</a>
 						</div><!--info-block end-->
+						<?php
+						  $excerpt = get_the_excerpt();
+						  echo string_limit_words($excerpt,40);
+						?>
 						<footer class="btn-vm">
-						<?php the_excerpt(); ?>
 							<a href="<?php the_permalink(); ?>">VER MÁS</a>
 						</footer>
 					</article><!--info-block end-->
@@ -100,7 +87,10 @@
 								<?php the_post_thumbnail(); ?>
 							</a>
 						</div>
-						<?php the_excerpt(); ?>
+						<?php
+						  $excerpt = get_the_excerpt();
+						  echo string_limit_words($excerpt,41);
+						?>
 						<footer class="btn-vm">
 							<a href="<?php the_permalink(); ?>">VER MÁS</a>
 						</footer>

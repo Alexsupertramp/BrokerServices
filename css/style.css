@@ -6129,8 +6129,8 @@ blockquote p {
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 400px;
-  height: 500px;
+  width: 440px;
+  height: 200px;
   z-index: 10;
   color: white;
 }
@@ -6156,7 +6156,7 @@ blockquote p {
 .texto-carousel .lineab2 {
   background-color: white;
   height: 1px;
-  width: 99%;
+  width: 95%;
   position: absolute;
   left: 0;
   right: 0;
@@ -6225,7 +6225,7 @@ blockquote p {
 .broker-content .broker-services .info-block {
   padding: 10px;
   padding-bottom: 80px;
-  height: 800px;
+  height: 600px;
   background-color: #e6e6e6;
   border: 1px #a3a3a3;
   border-style: solid;
@@ -6241,7 +6241,7 @@ blockquote p {
   color: white;
   position: relative;
   display: inline;
-  top: 30px;
+  top: 50px;
   bottom: 0;
   left: 0;
   right: 0;

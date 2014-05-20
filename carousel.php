@@ -3,6 +3,20 @@
 <?php if( $carousel_query->have_posts() ): ?>
 
 <div id="main-carousel" class="carousel slide" data-ride="carousel">
+	<div class="texto-carousel">
+        <h1>Financial Broker Services</h1>
+        <div class="lineab"></div>           	
+        <div class="lineab2"></div>
+        	<ul>
+        		<li>Créditos</li><p>♦</p>
+        		<li>Arrendamiento</li><p>♦</p>
+        		<li>Factoraje</li><p>♦</p>
+        		<li>Seguros</li>
+        	</ul> 
+        	<div class="ubicacion">
+        		DF y área Metropolitana
+        	</div>          
+    </div><!--texto-carousel end-->
   <!-- Indicators -->
   <ol class="carousel-indicators">
 
