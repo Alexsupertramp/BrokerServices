@@ -6225,6 +6225,7 @@ blockquote p {
 .broker-content .broker-services .info-block {
   padding: 10px;
   padding-bottom: 80px;
+  height: 500px;
   background-color: #e6e6e6;
   border: 1px #a3a3a3;
   border-style: solid;
