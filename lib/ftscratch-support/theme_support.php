@@ -216,12 +216,12 @@ function bones_theme_support() {
 
 			// 'footer-main-nav' => '[Footer] Main Menu',
 
-			// 'footer-first-col-nav' => '[Footer] First Menu',
+			 'footer-first-col-nav' => '[Footer] First Menu',
 			// 'footer-second-col-nav' => '[Footer] Second Menu',
 			// 'footer-third-col-nav' => '[Footer] Third Menu',
 			// 'footer-fourth-col-nav' => '[Footer] Fourth Menu',
 
-			'footer-legal-nav' => '[Footer] Legal Menu'
+			//'footer-legal-nav' => '[Footer] Legal Menu'
 		)
 	);
 } /* end bones theme support */
@@ -357,7 +357,7 @@ function bones_filter_ptags_on_images($content){
 function bones_excerpt_more($more) {
 	global $post;
 	// edit here if you like
-	return '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __( 'Read', 'bonestheme' ) . get_the_title($post->ID).'">'. __( 'Read more &raquo;', 'bonestheme' ) .'</a>';
+	return '...';
 }
 
 /*

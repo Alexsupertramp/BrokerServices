@@ -6303,6 +6303,9 @@ blockquote p {
   color: white;
   text-decoration: none;
 }
+.broker-footer .redes {
+  text-align: left;
+}
 .broker-footer .redes ul {
   padding: 0;
 }

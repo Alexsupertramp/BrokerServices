@@ -45,7 +45,7 @@
 					</div><!--col-xs-4 end-->
 					<div class="col-xs-8">
 						<div class="main-menu broker-m-style">
-						<?php wp_nav_menu(array('theme_location'=>'principal')); ?>
+						<?php wp_nav_menu(array('theme_location'=>'main-nav')); ?>
 						</div><!--main-menu broker-m-style end-->
 					</div><!--col-xs-8 end-->
 				</div><!--row end-->

@@ -17,9 +17,9 @@
             	<div class="ubicacion">
             		DF y área Metropolitana
             	</div>          
-          </div>
-        </div>
-    </div>
+          </div><!--col-xs-12 end-->
+        </div><!--row end-->
+    </div><!--texto-carousel end-->
 
 	<?php include('carousel.php'); ?>
 
@@ -34,7 +34,7 @@
 			</div><!--row end-->
 			<div class="row">
 
-			<?php $the_query = new WP_Query('pagename=creditos') ?>
+			<?php $the_query = new WP_Query('pagename=creditos'); ?>
 				<?php if($the_query->have_posts()): ?>
 					<?php while($the_query->have_posts()):$the_query->the_post(); ?>
 
@@ -48,7 +48,7 @@
 								<?php the_post_thumbnail(); ?>
 							</a>
 						</div><!--info-img end-->
-						<p><?php the_excerpt(); ?></p>
+						<?php the_excerpt(); ?>
 						<footer class="btn-vm">
 							<a href="<?php the_permalink(); ?>">VER MÁS</a>
 						</footer>
@@ -60,7 +60,7 @@
 				<?php endif; ?>
 			<?php wp_reset_postdata(); ?>
 
-			<?php $the_query2 = new WP_Query('pagename=arrendamiento') ?>
+			<?php $the_query2 = new WP_Query('pagename=arrendamiento'); ?>
 				<?php if($the_query2->have_posts()): ?>
 					<?php while($the_query2->have_posts()):$the_query2->the_post(); ?>
 
@@ -73,10 +73,10 @@
 							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail(); ?>
 							</a>
-						</div>
-						<p><?php the_excerpt(); ?></p>
+						</div><!--info-block end-->
 						<footer class="btn-vm">
-							<a href="<?phpthe_permalink(); ?>">VER MÁS</a>
+						<?php the_excerpt(); ?>
+							<a href="<?php the_permalink(); ?>">VER MÁS</a>
 						</footer>
 					</article><!--info-block end-->
 				</div><!--col-xs-4 end-->
@@ -86,7 +86,7 @@
 				<?php endif; ?>
 			<?php wp_reset_postdata(); ?>
 
-			<?php $the_query3=new WP_Query('pagename=factoraje') ?>
+			<?php $the_query3 = new WP_Query('pagename=factoraje'); ?>
 				<?php if($the_query3->have_posts()): ?>
 					<?php while($the_query3->have_posts()):$the_query3->the_post(); ?>
 
@@ -100,7 +100,7 @@
 								<?php the_post_thumbnail(); ?>
 							</a>
 						</div>
-						<p><?php the_excerpt(); ?></p>
+						<?php the_excerpt(); ?>
 						<footer class="btn-vm">
 							<a href="<?php the_permalink(); ?>">VER MÁS</a>
 						</footer>
@@ -123,7 +123,7 @@
 					<div class="linea">
 						<h3>Cotización de Divisas</h3>
 					</div>
-					<div><img src="<?php bloginfo( 'template_url' ); ?>/img/index/divisas.png" ></div><br>
+					<div><iframe src="http://www.investing.com/"></iframe></div><br>
 					<p>Cambios de Divisas entregados por <a href="#">Investing.com Mexico</a></p>
 				</div><!--col-xs-12 end-->
 			</div><!--row end-->
