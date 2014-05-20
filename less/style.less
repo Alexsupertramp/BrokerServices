@@ -306,12 +306,12 @@ blockquote {
 		background-color: white;
 		position: absolute;
 		margin: auto;
-		width: 325px;
+		width: 280px;
 		height: 60px;
 		top: 0;
 		left: 0;
 		right: 0;
-		bottom: 286px;
+		bottom: 190px;
 		z-index: 1;
 	}
 }
@@ -403,17 +403,33 @@ blockquote {
 	color:white;
 	padding: 10px 0 ;
 	vertical-align: middle;
-
-
-	a{
-		padding: 0;
-		display: inline;
-		color:white;
-		text-decoration: underline;
-		&:hover{
-			text-decoration: none;
+	ul{
+		padding:0;
+		li{
+			list-style: none;
+			a{
+				padding: 0;
+				display: inline-block;
+				color:white;
+				text-decoration: underline;
+				margin-left: 5px;
+				&:hover{
+					text-decoration: none;
+				}				
+			}
 		}
 	}
+	a{
+				padding: 0;
+				display: inline-block;
+				color:white;
+				text-decoration: underline;
+				margin-left: 5px;
+				&:hover{
+					text-decoration: none;
+				}				
+			}
+
 	p{
 		margin: 0 -40px;
 		display: inline;
@@ -422,17 +438,24 @@ blockquote {
 
 	}
 }
-	.custom-a{
-		font-size: 16px;
-		a{
+.custom-a{
+	font-size: 16px;
+	ul{
+		padding:0;
+		li{
+			list-style: none;
+			a{
 			background-color: @teal-grey-darker;
 			padding:12px 15px;
 			text-decoration: none;
+			display: inline;
 			&:hover{
 				background-color: @teal-yellow;
 				color:@teal-grey-darker;
 				padding:12px 15px;
+				}
 			}
 		}
+	}		
 
-	}
+}

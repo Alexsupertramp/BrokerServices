@@ -23,7 +23,7 @@
 
 	<?php include('carousel.php'); ?>
 
-	<div class="broker-services">
+	<section class="broker-services">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
@@ -114,7 +114,7 @@
 
 			</div><!--row end-->
 		</div><!--container end-->
-	</div><!--broker-services end-->
+	</section><!--broker-services end-->
 
 	<div class="broker-div">
 		<div class="container">
@@ -123,8 +123,11 @@
 					<div class="linea">
 						<h3>Cotización de Divisas</h3>
 					</div>
-					<div><iframe src="http://www.investing.com/"></iframe></div><br>
-					<p>Cambios de Divisas entregados por <a href="#">Investing.com Mexico</a></p>
+					<iframe frameborder="0" scrolling="no" height="192" width="484" allowtransparency="true" marginwidth="0" marginheight="0" src="http://indrates.mx.forexprostools.com/index.php?pairs_ids=169;166;20;170;24441;17920;172;&header-text-color=%23FFFFFF&curr-name-color=%230059b0&inner-text-color=%23000000&green-text-color=%232A8215&green-background=%23B7F4C2&green-background=%23B7F4C2&red-text-color=%23DC0001&red-background=%23FFE2E2&inner-border-color=%23CBCBCB&border-color=%23cbcbcb&bg1=%23F6F6F6&bg2=%23ffffff&open=show&last_update=hide"></iframe>
+					<br />
+					<span style="font-size: 11px;color: #333333;text-decoration: none;">
+						Índices por <a href="http://mx.investing.com/" rel="nofollow" target="_blank" style="font-size: 11px;color: #06529D; font-weight: bold;" class="underline_link">Investing.com México</a>.
+					</span><br>
 				</div><!--col-xs-12 end-->
 			</div><!--row end-->
 		</div><!--container end-->

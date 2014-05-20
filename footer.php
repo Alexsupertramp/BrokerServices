@@ -45,17 +45,19 @@
 			<div class="credits">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-4"><p>Sitio creado por&nbsp;&nbsp;<a href="http://www.nuevaweb.com.mx/">NuevaWeb</a></p></div>
-						<div class="col-xs-2">
-							<a href="<?php the_permalink(); ?>">Aviso de privacidad</a> 
+						<div class="col-xs-4">
+							<p> <?php bloginfo('name'); ?>  &copy; <?php the_date( 'Y', false); ?>  Todos los derechos reservados</p>
+						</div>
+						<div class="col-xs-2">							
+							<?php wp_nav_menu(array('theme_location'=>'footer-legal-nav')); ?> 
 						</div>
 						<div class="col-xs-2">
-							<p> &copy; 2014 Todos los derechos reservados</p>
+							<div class="custom-a">						
+								<?php wp_nav_menu(array('theme_location'=>'footer-second-col-nav')); ?>								
+							</div>
 						</div>
 						<div class="col-xs-4">
-							<div class="custom-a">						
-								<a href="<?php the_permalink(); ?>">FORMATOS</a>								
-							</div>
+							<p>Sitio creado por<a href="http://www.nuevaweb.com.mx/">NuevaWeb</a></p>
 						</div>
 
 					</div><!--row end-->

@@ -6273,12 +6273,12 @@ blockquote p {
   background-color: white;
   position: absolute;
   margin: auto;
-  width: 325px;
+  width: 280px;
   height: 60px;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 286px;
+  bottom: 190px;
   z-index: 1;
 }
 .broker-part {
@@ -6350,11 +6350,28 @@ blockquote p {
   color: #d3a60e;
   text-align: center;
 }
-.credits a {
+.credits ul {
   padding: 0;
-  display: inline;
+}
+.credits ul li {
+  list-style: none;
+}
+.credits ul li a {
+  padding: 0;
+  display: inline-block;
   color: white;
   text-decoration: underline;
+  margin-left: 5px;
+}
+.credits ul li a:hover {
+  text-decoration: none;
+}
+.credits a {
+  padding: 0;
+  display: inline-block;
+  color: white;
+  text-decoration: underline;
+  margin-left: 5px;
 }
 .credits a:hover {
   text-decoration: none;
@@ -6368,12 +6385,19 @@ blockquote p {
 .custom-a {
   font-size: 16px;
 }
-.custom-a a {
+.custom-a ul {
+  padding: 0;
+}
+.custom-a ul li {
+  list-style: none;
+}
+.custom-a ul li a {
   background-color: #2e2e2e;
   padding: 12px 15px;
   text-decoration: none;
+  display: inline;
 }
-.custom-a a:hover {
+.custom-a ul li a:hover {
   background-color: #f7da00;
   color: #2e2e2e;
   padding: 12px 15px;

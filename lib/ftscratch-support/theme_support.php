@@ -216,12 +216,12 @@ function bones_theme_support() {
 
 			// 'footer-main-nav' => '[Footer] Main Menu',
 
-			 'footer-first-col-nav' => '[Footer] First Menu',
-			// 'footer-second-col-nav' => '[Footer] Second Menu',
+			'footer-first-col-nav' => '[Footer] First Menu',
+		    'footer-second-col-nav' => '[Footer] Second Menu',
 			// 'footer-third-col-nav' => '[Footer] Third Menu',
 			// 'footer-fourth-col-nav' => '[Footer] Fourth Menu',
 
-			//'footer-legal-nav' => '[Footer] Legal Menu'
+			'footer-legal-nav' => '[Footer] Legal Menu'
 		)
 	);
 } /* end bones theme support */
