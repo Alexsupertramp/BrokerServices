@@ -6231,27 +6231,15 @@ blockquote p {
   margin-bottom: 25px;
 }
 .broker-content .broker-services .info-block h3 {
-  margin: 10px 0;
-}
-.broker-content .broker-services .info-block p {
-  text-align: justify;
-}
-.broker-content .broker-services .info-block .info-img {
-  border-top: 1px #a3a3a3;
-  border-right: 0px;
-  border-bottom: 0px;
-  border-left: 0px;
-  border-style: solid;
-  padding: 10px 0;
-}
-.broker-content .broker-services .info-block .info-img img {
-  width: 310px;
-  height: 250px;
+  margin: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #a3a3a3;
 }
 .broker-content .broker-services .info-block .btn-vm a {
   background-color: #d3a60e;
   color: white;
   position: relative;
+  display: inline;
   top: 30px;
   bottom: 0;
   left: 0;
@@ -6262,6 +6250,19 @@ blockquote p {
 .broker-content .broker-services .info-block .btn-vm a:hover {
   color: white;
   background-color: #f7da00;
+}
+.broker-content .broker-services .info-block a {
+  display: block;
+}
+.broker-content .broker-services .info-block p {
+  text-align: justify;
+}
+.broker-content .broker-services .info-block .info-img {
+  padding: 10px 0;
+}
+.broker-content .broker-services .info-block .info-img img {
+  width: 310px;
+  height: 250px;
 }
 .broker-div {
   background-color: white;

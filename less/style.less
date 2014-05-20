@@ -255,7 +255,31 @@ blockquote {
 		padding:10px;
 		padding-bottom: 80px;
 		h3{
-			margin:10px 0;
+			margin:10px;
+			padding-bottom: 10px;
+			border-bottom:  1px solid @teal-grey-light;
+		}
+		.btn-vm{	
+			a{
+				background-color: @teal-yellow-dark;
+				color:white;
+				position: relative;
+				display: inline;
+				top: 30px;
+				bottom: 0;
+				left: 0;
+				right:0;
+				width: auto;
+				padding: 8px 15px;
+				&:hover{
+					color:white;
+					background-color: @teal-yellow;
+				}
+			}
+		}
+
+		a{
+			display: block;
 		}
 			p{
 				text-align: justify;
@@ -265,38 +289,16 @@ blockquote {
 				border-style: solid;
 				margin-bottom: 25px;
 			.info-img{
-				border-top: 1px @teal-grey-light;
-				border-right: 0px;
-				border-bottom: 0px;
-				border-left: 0px;
-				border-style: solid;
 				padding: 10px 0;
 				img{
 					width: 310px;
 					height: 250px;
 				}
-			}
-			.btn-vm{	
-				a{
-					background-color: @teal-yellow-dark;
-					color:white;
-					position: relative;
-					top: 30px;
-					bottom: 0;
-					left: 0;
-					right:0;
-					width: auto;
-					padding: 8px 15px;
-					&:hover{
-						color:white;
-						background-color: @teal-yellow;
-					}
-				}
-			}	
-
+			}			
 		}
 	}
 }
+
 .broker-div{
 	background-color: white;
 	text-align: center;

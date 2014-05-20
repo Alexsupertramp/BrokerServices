@@ -48,7 +48,10 @@
 								<?php the_post_thumbnail(); ?>
 							</a>
 						</div><!--info-img end-->
-						<?php the_excerpt(); ?>
+						<?php
+						  $excerpt = get_the_excerpt();
+						  echo string_limit_words($excerpt,25);
+						?>
 						<footer class="btn-vm">
 							<a href="<?php the_permalink(); ?>">VER MÁS</a>
 						</footer>
@@ -75,7 +78,10 @@
 							</a>
 						</div><!--info-block end-->
 						<footer class="btn-vm">
-						<?php the_excerpt(); ?>
+						<?php
+						  $excerpt = get_the_excerpt();
+						  echo string_limit_words($excerpt,25);
+						?>
 							<a href="<?php the_permalink(); ?>">VER MÁS</a>
 						</footer>
 					</article><!--info-block end-->
@@ -100,7 +106,10 @@
 								<?php the_post_thumbnail(); ?>
 							</a>
 						</div>
-						<?php the_excerpt(); ?>
+						<?php
+						  $excerpt = get_the_excerpt();
+						  echo string_limit_words($excerpt,25);
+						?>
 						<footer class="btn-vm">
 							<a href="<?php the_permalink(); ?>">VER MÁS</a>
 						</footer>

@@ -165,6 +165,15 @@ function bones_wpsearch($form) {
 	return $form;
 } // don't remove this bracket!
 
+
+function string_limit_words($string, $word_limit)
+{
+  $words = explode(' ', $string, ($word_limit + 1));
+  if(count($words) > $word_limit)
+  array_pop($words);
+  return implode(' ', $words);
+}
+
 /************* INCLUDE WIDGETS HERE *****************/
 
 include('widget/widget-custom-link.php');
