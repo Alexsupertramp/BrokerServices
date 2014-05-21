@@ -29,14 +29,12 @@
 					<?php endif; ?>
 					<?php wp_reset_postdata(); ?>						
 
-					<?php if(is_active_sidebar('sidebar1')): ?>				
+					<?php if(is_active_sidebar('redesidebar')): ?>				
 					<div class="col-xs-3 col-xs-offset-1">
-						<div class="redes">
-							<h4>Síguenos en: </h4>
-								<ul>
-									<?php dynamic_sidebar( 'sidebar1' ); ?>
-								</ul>
-						</div>
+						<h4>Síguenos en: </h4>						
+						<nav class="redes">
+							<?php dynamic_sidebar( 'redesidebar' ); ?>
+						</nav>
 					</div><!--col-xs-4 end-->
 					<?php  endif; ?>
 
@@ -48,14 +46,13 @@
 						<div class="col-xs-4">
 							<p> <?php bloginfo('name'); ?>  &copy; <?php the_date( 'Y', false); ?>  Todos los derechos reservados</p>
 						</div>
-						<div class="col-xs-2">							
-							<?php wp_nav_menu(array('theme_location'=>'footer-legal-nav')); ?> 
-						</div>
-						<div class="col-xs-2">
-							<div class="custom-a">						
-								<?php wp_nav_menu(array('theme_location'=>'footer-second-col-nav')); ?>								
+						<?php if(is_active_sidebar('footsidebar')): ?>	
+							<div class="col-xs-4">		
+								<nav class="footer-legales">
+									<?php dynamic_sidebar( 'footsidebar' ); ?>
+								</nav>			
 							</div>
-						</div>
+						<?php  endif; ?>
 						<div class="col-xs-4">
 							<p>Sitio creado por<a href="http://www.nuevaweb.com.mx/">NuevaWeb</a></p>
 						</div>

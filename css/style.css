@@ -5956,6 +5956,9 @@ td.visible-print {
     display: none !important;
   }
 }
+.container {
+  width: 1200px !important;
+}
 .main-menu ul {
   padding: 0px;
   font-size: 16px;
@@ -6216,6 +6219,7 @@ blockquote p {
 .broker-content .broker-services {
   background-color: white;
   background-image: url('../img/index/pattern.png');
+  padding-bottom: 30px;
 }
 .broker-content .broker-services .linea {
   background-color: #d3a60e;
@@ -6225,27 +6229,29 @@ blockquote p {
 .broker-content .broker-services .info-block {
   padding: 10px;
   padding-bottom: 80px;
-  height: 600px;
+  height: 550px;
   background-color: #e6e6e6;
   border: 1px #a3a3a3;
   border-style: solid;
-  margin-bottom: 25px;
+  position: relative;
+  display: block;
 }
 .broker-content .broker-services .info-block h3 {
-  margin: 10px;
+  margin: 10px 0;
   padding-bottom: 10px;
   border-bottom: 1px solid #a3a3a3;
 }
 .broker-content .broker-services .info-block .btn-vm a {
   background-color: #d3a60e;
   color: white;
-  position: relative;
+  position: absolute;
   display: inline;
-  top: 50px;
-  bottom: 0;
+  bottom: 20px;
   left: 0;
   right: 0;
-  width: auto;
+  margin: auto;
+  width: 120px;
+  height: 35px;
   padding: 8px 15px;
 }
 .broker-content .broker-services .info-block .btn-vm a:hover {
@@ -6259,11 +6265,10 @@ blockquote p {
   text-align: justify;
 }
 .broker-content .broker-services .info-block .info-img {
-  padding: 10px 0;
+  margin: 10px 0;
 }
 .broker-content .broker-services .info-block .info-img img {
-  width: 310px;
-  height: 250px;
+  width: 100%;
 }
 .broker-div {
   background-color: white;
@@ -6312,11 +6317,14 @@ blockquote p {
   color: white;
   text-decoration: none;
 }
+.broker-footer .broker-mapa ul li a:hover {
+  color: #f7da00;
+}
 .broker-footer .redes {
   text-align: left;
 }
-.broker-footer .redes ul {
-  padding: 0;
+.broker-footer .redes .widget-custom-link {
+  margin-bottom: 10px;
 }
 .broker-footer .redes .widget-custom-link-icon {
   display: inline-block;
@@ -6328,8 +6336,11 @@ blockquote p {
   color: #f7da00;
   margin-right: 10px;
 }
-.broker-footer .redes a {
+.broker-footer .redes p {
   margin: 0;
+}
+.broker-footer .redes p:hover {
+  color: #f7da00;
 }
 .broker-footer a {
   display: list-item;
@@ -6337,6 +6348,9 @@ blockquote p {
   color: white;
   text-align: left;
   margin-left: 15px;
+}
+.broker-footer a:hover {
+  color: #f7da00;
 }
 .broker-footer p {
   color: white;
@@ -6351,8 +6365,34 @@ blockquote p {
   width: 100%;
   background-color: black;
   color: white;
-  padding: 10px 0 ;
+  padding: 0 ;
   vertical-align: middle;
+}
+.credits .footer-legales .widget-custom-link {
+  display: inline-block;
+  margin-right: 25px;
+}
+.credits .footer-legales .widget-custom-link a {
+  text-decoration: none;
+}
+.credits .footer-legales p {
+  margin: 0;
+  text-decoration: underline;
+}
+.credits .footer-legales p:hover {
+  color: #f7da00;
+}
+.credits .primary-btn p {
+  text-decoration: none;
+  font-size: 16px;
+  background-color: #2e2e2e;
+  padding: 12px 15px;
+  display: inline-block;
+}
+.credits .primary-btn p:hover {
+  background-color: #f7da00;
+  color: #2e2e2e;
+  padding: 12px 15px;
 }
 .credits h4 {
   margin-top: 50px;
@@ -6374,6 +6414,7 @@ blockquote p {
 }
 .credits ul li a:hover {
   text-decoration: none;
+  color: #f7da00;
 }
 .credits a {
   padding: 0;
@@ -6383,31 +6424,9 @@ blockquote p {
   margin-left: 5px;
 }
 .credits a:hover {
-  text-decoration: none;
+  color: #f7da00;
 }
 .credits p {
-  margin: 0 -40px;
-  display: inline;
   color: #a3a3a3;
-  padding: 0px 0px 55px 0px;
-}
-.custom-a {
-  font-size: 16px;
-}
-.custom-a ul {
-  padding: 0;
-}
-.custom-a ul li {
-  list-style: none;
-}
-.custom-a ul li a {
-  background-color: #2e2e2e;
-  padding: 12px 15px;
-  text-decoration: none;
-  display: inline;
-}
-.custom-a ul li a:hover {
-  background-color: #f7da00;
-  color: #2e2e2e;
-  padding: 12px 15px;
+  margin-top: 15px;
 }

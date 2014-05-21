@@ -1,7 +1,7 @@
 //	Import all your stuff here
 // ------------------------------------
 @import '../lib/bootstrap-3.0.3/less/bootstrap.less';// Bootstrap Docs: http://getbootstrap.com/
-// .container{ width: 970px !important; } // Bootstrap Disabling responsiveness Docs: http://getbootstrap.com/getting-started/#disable-responsive
+ .container{ width: 1200px !important; } // Bootstrap Disabling responsiveness Docs: http://getbootstrap.com/getting-started/#disable-responsive
 
 @import "wordpress.css";
 @import "../lib/font-awesome-4.0.3/css/font-awesome.min.css"; // Font-Awesome Docs: http://fontawesome.io/icons/
@@ -246,6 +246,7 @@ blockquote {
 	.broker-services{
 		background-color: white;
 		background-image: url('../img/index/pattern.png');
+		padding-bottom: 30px;
 		.linea{
 			background-color: @teal-yellow-dark;
 			height: 2px;
@@ -254,9 +255,14 @@ blockquote {
 		.info-block{
 		padding:10px;
 		padding-bottom: 80px;
-		height: 600px;
+		height: 550px;
+		background-color: @teal-grey-lighter;
+		border:1px @teal-grey-light;
+		border-style: solid;
+		position: relative;
+		display: block;
 		h3{
-			margin:10px;
+			margin:10px 0;
 			padding-bottom: 10px;
 			border-bottom:  1px solid @teal-grey-light;
 		}
@@ -264,13 +270,14 @@ blockquote {
 			a{
 				background-color: @teal-yellow-dark;
 				color:white;
-				position: relative;
+				position: absolute;
 				display: inline;
-				top: 50px;
-				bottom: 0;
+				bottom: 20px;
 				left: 0;
-				right:0;
-				width: auto;
+				right: 0;
+				margin: auto;
+				width: 120px;
+				height: 35px;
 				padding: 8px 15px;
 				&:hover{
 					color:white;
@@ -285,15 +292,10 @@ blockquote {
 			p{
 				text-align: justify;
 			}
-				background-color: @teal-grey-lighter;
-				border:1px @teal-grey-light;
-				border-style: solid;
-				margin-bottom: 25px;
 			.info-img{
-				padding: 10px 0;
+				margin: 10px 0;
 				img{
-					width: 310px;
-					height: 250px;
+					width: 100%;
 				}
 			}			
 		}
@@ -351,6 +353,9 @@ blockquote {
 				a{
 					color:white;
 					text-decoration: none;
+					&:hover{
+						color:@teal-yellow;
+					}
 				}
 			}
 		}	
@@ -359,26 +364,27 @@ blockquote {
 	//background-color: @teal-grey-darker;
 	.redes{
 		text-align: left;
-		ul{
-			padding: 0;
+		.widget-custom-link{
+			margin-bottom: 10px;
 		}
 		.widget-custom-link-icon{
 			
-				display: inline-block;	
-			
+				display: inline-block;
 		}
 		.widget-custom-link-text{
 			
-				display: inline-block;
-			
+				display: inline-block;			
 		}
 		i{
 			color:@teal-yellow;
 			margin-right: 10px;
 
 		}	
-		a{
+		p{
 			margin: 0;
+			&:hover{
+						color:@teal-yellow;
+					}
 		}
 		
 	}
@@ -388,6 +394,9 @@ blockquote {
 		color: white;
 		text-align: left;
 		margin-left: 15px;
+		&:hover{
+						color:@teal-yellow;
+					}
 	}
 	p{
 		i{
@@ -401,18 +410,53 @@ blockquote {
 	
 }//.broker-footer
 
+
 .credits{
+	font-size: 11px;
+	width: 100%;
+	background-color: black;
+	color:white;
+	padding: 0 ;
+	vertical-align: middle;
+	.footer-legales{
+		.widget-custom-link{
+			display: inline-block;
+			margin-right: 25px;
+			a{
+				text-decoration: none;
+			}
+		}
+		p{
+			margin:0; 
+			text-decoration: underline;
+			&:hover{
+						color:@teal-yellow;
+					}
+		}
+	}
+	.primary-btn{
+		p{
+			text-decoration: none;
+		
+		
+		font-size: 16px;		
+		background-color: @teal-grey-darker;
+		padding:12px 15px;
+		display: inline-block;
+		&:hover{
+			background-color: @teal-yellow;
+			color:@teal-grey-darker;
+			padding:12px 15px;
+		}
+	}
+			
+	}
 	h4{
 		margin-top: 50px;
 		color: @teal-yellow-dark;
 		text-align: center;
 	}
-	font-size: 11px;
-	width: 100%;
-	background-color: black;
-	color:white;
-	padding: 10px 0 ;
-	vertical-align: middle;
+	
 	ul{
 		padding:0;
 		li{
@@ -425,47 +469,25 @@ blockquote {
 				margin-left: 5px;
 				&:hover{
 					text-decoration: none;
+					color:@teal-yellow;
 				}				
 			}
 		}
 	}
 	a{
-				padding: 0;
-				display: inline-block;
-				color:white;
-				text-decoration: underline;
-				margin-left: 5px;
-				&:hover{
-					text-decoration: none;
-				}				
-			}
+		padding: 0;
+		display: inline-block;
+		color:white;
+		text-decoration: underline;
+		margin-left: 5px;
+		&:hover{
+			color:@teal-yellow;
+		}				
+	}
 
 	p{
-		margin: 0 -40px;
-		display: inline;
 		color:@teal-grey-light;
-		padding: 0px 0px 55px 0px;
+		margin-top: 15px;
 
 	}
-}
-.custom-a{
-	font-size: 16px;
-	ul{
-		padding:0;
-		li{
-			list-style: none;
-			a{
-			background-color: @teal-grey-darker;
-			padding:12px 15px;
-			text-decoration: none;
-			display: inline;
-			&:hover{
-				background-color: @teal-yellow;
-				color:@teal-grey-darker;
-				padding:12px 15px;
-				}
-			}
-		}
-	}		
-
 }

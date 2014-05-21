@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="broker-content">
-	
+
 	<?php include('carousel.php'); ?>
 
 	<section class="broker-services">
@@ -29,10 +29,13 @@
 								<?php the_post_thumbnail(); ?>
 							</a>
 						</div><!--info-img end-->
-						<?php
-						  $excerpt = get_the_excerpt();
-						  echo string_limit_words($excerpt,35);
-						?>
+						<p>
+							<?php
+							  $excerpt = get_the_excerpt();
+							  echo string_limit_words($excerpt,35);
+							  echo bones_excerpt_more($more);
+							?>
+						</p>
 						<footer class="btn-vm">
 							<a href="<?php the_permalink(); ?>">VER MÁS</a>
 						</footer>
@@ -58,10 +61,13 @@
 								<?php the_post_thumbnail(); ?>
 							</a>
 						</div><!--info-block end-->
-						<?php
-						  $excerpt = get_the_excerpt();
-						  echo string_limit_words($excerpt,40);
-						?>
+						<p>
+							<?php
+							  $excerpt = get_the_excerpt();
+							  echo string_limit_words($excerpt,35);
+							  echo bones_excerpt_more($more);
+							?>
+						</p>
 						<footer class="btn-vm">
 							<a href="<?php the_permalink(); ?>">VER MÁS</a>
 						</footer>
@@ -87,10 +93,13 @@
 								<?php the_post_thumbnail(); ?>
 							</a>
 						</div>
-						<?php
-						  $excerpt = get_the_excerpt();
-						  echo string_limit_words($excerpt,41);
-						?>
+						<p>
+							<?php
+							  $excerpt = get_the_excerpt();
+							  echo string_limit_words($excerpt,35);
+							  echo bones_excerpt_more($more);
+							?>
+						</p>
 						<footer class="btn-vm">
 							<a href="<?php the_permalink(); ?>">VER MÁS</a>
 						</footer>
